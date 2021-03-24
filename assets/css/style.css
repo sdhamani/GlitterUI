@@ -71,7 +71,7 @@ body {
 
 
 .main-menu {
-    height: 550px;
+    height: 580px;
     scroll-behavior: smooth;
     overflow-y: scroll;
     flex: 3;
@@ -122,6 +122,17 @@ body {
     margin: 1rem 2rem;
     margin-right: 4rem;
     position: relative;
+}
+.button-container{
+    background-color: var(--side--bar);
+    padding: 1rem;
+    text-align: center;
+    width: max-content;
+    border-radius: 10px;
+    margin: 1rem 2rem;
+    margin-right: 4rem;
+    position: relative;
+
 }
 .item-container>span{
     margin: 1rem;
@@ -224,7 +235,7 @@ hr {
 
 
 
-
+/* responsive starts */
 
 
 @media screen and (max-width:700px) {
@@ -283,5 +294,7 @@ hr {
         display: none;
     }
 
-
+.side-bar{
+    display: none;
+}
 }

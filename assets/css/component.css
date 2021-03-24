@@ -540,10 +540,107 @@
 /* g button ends */
 
 
+/* cards starts here*/
+
+.g-card {
+    border: 1px solid gray;
+    display: flex;
+    box-shadow: #303030;
+}
+
+/* vertical cards */
+.g-vcard {
+    width: 210px;
+    min-height: 360px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.g-hcard {
+    height: 210px auto;
+    width: 600px;
+    justify-content: space-around;
+
+}
+
+.g-hcard img {
+    height: 210px;
+    width:330px;
+}
+
+.g-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.g-card p {
+    margin: 0.4rem 0px;
+
+}
+
+.g-card h1 {
+    margin: 0px;
+    font-size: 18px;
+    display: inline;
+}
+
+.g-vcard div {
+    flex-direction: column;
+    margin: 0.2rem 0px;
+    padding: 0px 5px;
+}
+.g-hcard div {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin: 0.2rem 0px;
+    padding: 0px 10px;
+}
+.g-card .old-price {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+
+}
+
+.g-card .discount {
+    color: red;
+    max-resolution: 0px 0.2rem;
+}
+
+.g-card button {
+    margin: 0.5rem;
+}
+
+.g-vcard img {
+    width: inherit;
+    height: 230px;
 
 
+}
 
 
+/* cards ends here*/
+/* input starts */
+.g-input{
+    font-size: 17px;
+    padding: 0.5rem;
+    width: 400px;
+    outline-color: grey;
+}
+/* input ends */
+/* list starts */
+.g-list >li{
+list-style: none;
+font-size: 20px;
+margin: 0;
+padding: 0px;
+padding: 0.4rem;
+margin: 4px;
+}
+/* list ends */
 /* responsive starts here */
 
 @media screen and (max-width:700px) {
