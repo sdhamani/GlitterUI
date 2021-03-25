@@ -298,3 +298,7 @@ hr {
     display: none;
 }
 }
+.image-container{
+ width: 300px;
+ height: 300px;
+}

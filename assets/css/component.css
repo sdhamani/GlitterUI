@@ -548,31 +548,13 @@
     box-shadow: #303030;
 }
 
-/* vertical cards */
-.g-vcard {
-    width: 210px;
-    min-height: 360px;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+.g-card .discount {
+    color: red;
+    margin: 0px 0.2rem;
 }
 
-.g-hcard {
-    height: 210px auto;
-    width: 600px;
-    justify-content: space-around;
-
-}
-
-.g-hcard img {
-    height: 210px;
-    width:330px;
-}
-
-.g-card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.g-card button {
+    margin: 0.5rem;
 }
 
 .g-card p {
@@ -586,18 +568,11 @@
     display: inline;
 }
 
-.g-vcard div {
-    flex-direction: column;
-    margin: 0.2rem 0px;
-    padding: 0px 5px;
+.g-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.g-hcard div {
-    display: flex;
-    flex-direction: column;
-    justify-self: start;
-    margin: 0.2rem 0px;
-    padding: 0px 10px;
-}
+
 .g-card .old-price {
     font-size: 15px;
     color: gray;
@@ -605,13 +580,20 @@
 
 }
 
-.g-card .discount {
-    color: red;
-    max-resolution: 0px 0.2rem;
+/* vertical cards */
+.g-vcard {
+    width: 210px;
+    min-height: 360px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
-.g-card button {
-    margin: 0.5rem;
+.g-vcard div {
+    flex-direction: column;
+    margin: 0.2rem 0px;
+    padding: 0px 5px;
 }
 
 .g-vcard img {
@@ -621,26 +603,181 @@
 
 }
 
+/* horizontal card */
+
+
+
+
+.g-hcard {
+    height: 210px auto;
+    width: 600px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.g-hcard img {
+    height: 210px;
+    width: 330px;
+}
+
+
+.g-hcard div {
+
+    margin: 0.2rem 0px;
+    padding: 0px 10px;
+}
+
+.g-bottom {
+    flex-direction: column;
+}
+
+
+
+
 
 /* cards ends here*/
 /* input starts */
-.g-input{
+.g-input {
     font-size: 17px;
     padding: 0.5rem;
     width: 400px;
     outline-color: grey;
 }
+
 /* input ends */
 /* list starts */
-.g-list >li{
-list-style: none;
-font-size: 20px;
-margin: 0;
-padding: 0px;
-padding: 0.4rem;
-margin: 4px;
+.g-list {
+    margin: 0px;
+    padding: 0px;
+
 }
+
+.g-list li {
+    border-radius: 8%;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+
+    padding: 0.4rem;
+    margin: 4px;
+    border: 1px solid gray;
+}
+
+.g-list-style1>li:nth-child(odd) {
+    background-color: gray;
+
+}
+
 /* list ends */
+/* nav starts */
+.g-nav {
+    padding: 1rem;
+    width: auto;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.g-nav a {
+    text-decoration: none;
+    color: inherit
+}
+
+.g-nav a:hover {
+    font-weight: bold;
+}
+
+.g-nav>h1 {
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+}
+
+.g-nav ul {
+
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.g-nav li {
+
+    font-size: 1.2rem;
+    display: inline;
+    list-style: none;
+    margin: 0px 0.5rem;
+}
+
+/* solid nav start  */
+.g-solid-nav {
+    background-color: var(--nav-color);
+}
+
+/* solid nav ends */
+/* border nav starts */
+
+
+
+.g-border-nav {
+    border: 3px solid var(--nav-color);
+    color: #6b6767;
+}
+
+/* border nav ends */
+/* nav ends */
+/* modal start */
+.g-modal {
+    position: relative;
+    padding: 1rem;
+    width: 550px;
+    text-align: start;
+    border: 1px solid var(--nav-color)
+}
+
+.g-modal p,
+.g-modal h1 {
+    margin:  0.5rem;
+    padding: 0;
+}
+
+.g-modal-close {
+    border-radius: 50%;
+    border: 0px;
+    outline: none;
+    font-size: 13px;
+    background-color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    cursor: pointer;
+    right: 1rem;
+}
+.g-modal-close:active{
+    background-color: lavenderblush;
+}
+.modal-button-container button{
+    margin: 0.5rem 1rem;
+}
+.modal-button-container{
+    display: flex;
+    justify-content: center;
+}
+/* modal ends */
+/* Responsive image */
+.g-image{
+    width: 100%;
+    height:100%;
+}
+.g-round-image{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+}
+/* Responsive image ends */
 /* responsive starts here */
 
 @media screen and (max-width:700px) {
